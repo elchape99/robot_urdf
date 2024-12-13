@@ -16,7 +16,7 @@ def generate_launch_description():
     test_robot_description_share = FindPackageShare(package='robot_urdf').find('robot_urdf')
     default_model_path = os.path.join(test_robot_description_share, 'urdf/robot4.xacro')
     rviz_config_path = os.path.join(test_robot_description_share, 'config/rviz.rviz')
-    default_world_path = os.path.join(test_robot_description_share, 'worlds/mytest.world')
+    default_world_path = os.path.join(test_robot_description_share, 'worlds/marker_circle.world')
 
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
